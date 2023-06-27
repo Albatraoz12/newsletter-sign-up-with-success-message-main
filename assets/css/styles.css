@@ -23,10 +23,50 @@ body {
   background-color: hsl(235, 18%, 26%);
   font-family: robotoCustom, sans-serif;
   line-height: 1;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 400;
   height: 100vh;
 }
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 2rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 4rem;
+  width: 50%;
+  height: 100%;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+.list {
+  list-style-image: url('../images/icon-list.svg');
+  padding-left: 1.5rem;
+}
+
+.list-item {
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
 
 footer {
   display: flex;
@@ -41,33 +81,4 @@ footer {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  background-color: white;
-  padding: 2.5rem;
-  border-radius: 2rem;
-}
-
-.card-container {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  flex-direction: column;
-  gap: 3rem;
-  padding: 0 4rem;
-  padding-left: 2rem;
-}
-
-.card-container,
-div,
-p {
-  margin-bottom: 2.5rem;
 }
