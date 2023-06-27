@@ -101,6 +101,27 @@ h1 {
   background-color: hsl(235, 18%, 26%);
 }
 
+.signup-form button:hover,
+.signup-form button:focus {
+  background: rgb(255, 83, 119);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 83, 119, 1) 23%,
+    rgba(255, 98, 87, 1) 58%
+  );
+  border-color: transparent;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 83, 119, 0.8), 0 0 20px rgba(255, 83, 119, 0.6);
+}
+
+.signup-form button:focus {
+  outline: none;
+}
+
+.signup-form input:focus {
+  outline-color: green;
+}
+
 /* Footer */
 
 footer {
