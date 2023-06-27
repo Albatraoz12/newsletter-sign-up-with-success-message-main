@@ -85,6 +85,7 @@ h2 {
   flex-direction: column;
   gap: 1rem;
   width: 100%;
+  /* align-items: center; */
 }
 
 .signup-form label {
@@ -96,6 +97,26 @@ h2 {
   padding: 0.8rem 1.2rem;
   border-radius: 0.7rem;
   font-size: 1.2rem;
+}
+.signup-form .error-message {
+  color: hsl(4, 100%, 67%);
+  font-weight: 700;
+  display: none;
+}
+
+.signup-form.error .error-message-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.signup-form.error input {
+  background-color: hsl(4, 100%, 95%);
+  border-color: hsl(4, 100%, 67%);
+  color: hsl(4, 100%, 67%);
+}
+
+.signup-form.error .error-message {
+  display: block;
 }
 
 .signup-form button {
