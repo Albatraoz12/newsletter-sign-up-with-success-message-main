@@ -4,14 +4,44 @@
   box-sizing: border-box;
 }
 
+/* Fonts */
+/* 400 */
+@font-face {
+  font-family: robotoCustom;
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: 400;
+}
+
+/* 700 */
+@font-face {
+  font-family: robotoCustom;
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-weight: 700;
+}
+
 body {
-  background-color: aquamarine;
+  background-color: hsl(235, 18%, 26%);
+  color: white;
+  font-family: robotoCustom, sans-serif;
+  line-height: 1;
+  font-size: 1.6rem;
+  font-weight: 400;
+  height: 100vh;
 }
 
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 .container {
