@@ -4,6 +4,7 @@ const closeModalButton = document.querySelector('.btn');
 const submitBtn = document.querySelector('.form-submit-btn');
 const emailIn = document.getElementById('email');
 const submittedEmailEl = document.querySelector('.submitted-email');
+const signUpFormEl = document.querySelector('.signup-form');
 
 // Event listners
 submitBtn.addEventListener('click', submitEmail);
