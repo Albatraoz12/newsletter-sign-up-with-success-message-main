@@ -25,20 +25,20 @@ body {
   line-height: 1;
   font-size: 1rem;
   font-weight: 400;
-  height: 100vh;
 }
 
 .container {
-  width: 80%;
-  margin: 0 auto;
+  width: 65%;
+  height: fit-content;
+  margin: auto;
   margin-top: 5rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: space-between;
   background-color: white;
   padding: 1.5rem;
   border-radius: 2rem;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.14);
 }
 
 .card-container {
@@ -48,13 +48,23 @@ body {
   flex-direction: column;
   gap: 2rem;
   padding: 0 4rem;
-  width: 50%;
+  width: 70%;
   height: 100%;
 }
 
+.img-section {
+  margin-left: 2rem;
+  height: fit-content;
+}
+
+/* .img-section img {
+  max-width: 100%;
+  display: block;
+} */
+
 h1 {
   font-weight: 700;
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 
 .list {
