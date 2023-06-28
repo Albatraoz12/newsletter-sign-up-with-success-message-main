@@ -169,17 +169,12 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1rem;
-  width: 40%;
+  gap: 2rem;
+  width: 30rem;
   transform: translate(-50%, -50%);
   background-color: white;
   border-radius: 2rem;
-  padding: 2rem 4rem;
-}
-
-.modal-content p,
-.modal-container button {
-  width: 50%;
+  padding: 4rem;
 }
 
 .modal-container.active {
