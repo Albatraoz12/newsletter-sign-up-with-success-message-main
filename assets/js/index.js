@@ -45,3 +45,27 @@ function openModal() {
 function closeModal() {
   modalContainer.classList.remove('active');
 }
+
+window.addEventListener('DOMContentLoaded', function () {
+  var imgElement = document.getElementById('dynamic-image');
+
+  function updateImageSrc() {
+    var windowWidth = window.innerWidth;
+    var imageUrl = '';
+
+    if (windowWidth <= 1344) {
+      // Mobile viewport width
+      imageUrl = 'assets/images/illustration-sign-up-mobile.svg';
+    } else {
+      imageUrl = 'assets/images/illustration-sign-up-desktop.svg';
+    }
+
+    imgElement.src = imageUrl;
+  }
+
+  // Update image src on initial page load
+  updateImageSrc();
+
+  // Update image src on window resize
+  window.addEventListener('resize', updateImageSrc);
+});
